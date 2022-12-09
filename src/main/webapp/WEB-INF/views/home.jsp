@@ -1,16 +1,9 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 신춘영
-  Date: 2022-12-02
-  Time: 오후 5:31
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<a href="list">list 보기</a>
+</body>
 </html>

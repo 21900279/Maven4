@@ -1,16 +1,19 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 신춘영
-  Date: 2022-12-02
-  Time: 오후 5:35
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <title>Edit</title>
+</head>
+<body>
+<form:form modelAttribute="u" action="../editok" method="POST">
+    <form:hidden path="seq" />
+    <table id="edit">
+        <tr><td>과목</td><td><form:input path="subject"/></td></tr>
+        <tr><td>글쓴이</td><td><form:input path="writer"/></td></tr>
+        <tr><td>내용</td><td><form:input path="content"/></td></tr>
+        <tr><td>마감일</td><td><form:input path="dueDate"/></td></tr>
+    </table>
+    <input type="submit" value="수정하기"/>
+</form:form>
+</body>
 </html>
