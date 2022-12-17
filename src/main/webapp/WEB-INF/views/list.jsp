@@ -40,6 +40,7 @@
     <tr>
         <th>Id</th>
         <th>과목</th>
+        <th>분반</th>
         <th>글쓴이</th>
         <th>내용</th>
         <th>기간</th>
@@ -51,6 +52,7 @@
         <tr>
             <td><c:out value="${u.seq}"/></td>
             <td><c:out value="${u.subject}"/></td>
+            <td><c:out value="${u.classdiv}"/></td>
             <td><c:out value="${u.writer}"/></td>
             <td><c:out value="${u.content}"/></td>
             <td><c:out value="${u.dueDate}"/></td>

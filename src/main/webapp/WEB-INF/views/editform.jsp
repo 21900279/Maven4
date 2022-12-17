@@ -9,6 +9,7 @@
     <form:hidden path="seq" />
     <table id="edit">
         <tr><td>과목</td><td><form:input path="subject"/></td></tr>
+        <tr><td>분반</td><td><form:input path="classdiv"/></td></tr>
         <tr><td>글쓴이</td><td><form:input path="writer"/></td></tr>
         <tr><td>내용</td><td><form:input path="content"/></td></tr>
         <tr><td>마감일</td><td><form:input path="dueDate"/></td></tr>

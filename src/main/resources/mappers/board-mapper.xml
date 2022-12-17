@@ -4,10 +4,10 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Board">
     <insert id="insertBoard">
-        insert into BOARD (subject, writer, content, dueDate) values (#{subject}, #{writer}, #{content}, #{dueDate})
+        insert into BOARD (subject, classdiv, writer, content, dueDate) values (#{subject}, #{classdiv}, #{writer}, #{content}, #{dueDate})
     </insert>
     <update id="updateBoard">
-        update BOARD set subject=#{subject}, writer=#{writer}, content=#{content}, dueDate=#{dueDate} where seq=#{seq}
+        update BOARD set subject=#{subject}, classdiv=#{classdiv}, writer=#{writer}, content=#{content}, dueDate=#{dueDate} where seq=#{seq}
     </update>
     <delete id="deleteBoard">
         delete form BOARD where seq=#{seq}

@@ -61,6 +61,16 @@ public class BoardVO {
 
     private int seq;
     private String subject;
+    private String classdiv;
+
+    public String getClassdiv() {
+        return classdiv;
+    }
+
+    public void setClassdiv(String classdiv) {
+        this.classdiv = classdiv;
+    }
+
     private String writer;
     private String content;
     private String dueDate;
